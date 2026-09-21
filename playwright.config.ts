@@ -5,7 +5,6 @@ declare const process: { version: string };
 
 const config: PlaywrightTestConfig = {
   testDir: "./test",
-  testMatch: "TC07_Checkout.test.ts",
 
   fullyParallel: true,
 
@@ -33,6 +32,14 @@ const config: PlaywrightTestConfig = {
       name: "chromium",
       use: {
         ...devices["Desktop Chrome"],
+      },
+    },
+    {
+      name: "edge",
+      testMatch: /TC07_Checkout\.test\.ts/,
+      use: {
+        ...devices["Desktop Edge"],
+        channel: "msedge",
       },
     },
   ],
