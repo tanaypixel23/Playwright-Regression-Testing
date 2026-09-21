@@ -1,0 +1,4 @@
+[chromium] Desktop (1366px) columns: 3
+[chromium] Tablet (768px) columns: 2
+[chromium] Mobile (425px) columns: 1
+[chromium] Responsive grid verified at all viewports.
