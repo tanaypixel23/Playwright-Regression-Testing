@@ -124,8 +124,7 @@ function validateForm() {
 }
 // Check if email is valid
 function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
+    return /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email);
 }
 // Check if zip code is valid
 function isValidZip(zip) {
