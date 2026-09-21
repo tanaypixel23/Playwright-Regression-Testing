@@ -1,0 +1,1 @@
+[chromium] Mobile checkout layout verified.
