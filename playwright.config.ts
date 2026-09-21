@@ -5,7 +5,6 @@ declare const process: { version: string };
 
 const config: PlaywrightTestConfig = {
   testDir: "./test",
-  testMatch: "TC07_Checkout.test.ts",
 
   fullyParallel: true,
 
